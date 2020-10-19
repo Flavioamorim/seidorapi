@@ -5,10 +5,8 @@ const app = express()
 const router = express.Router()
 const mongoose = require('mongoose')
 
-//database
 mongoose.connect(config.connectionString)
 
-// load routes
 const carRoutes = require('./routes/car-route')
 const driverRoutes = require('./routes/driver-route')
 const driverCarRoutes = require('./routes/driver-car-route')
