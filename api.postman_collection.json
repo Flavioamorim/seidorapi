@@ -1,0 +1,511 @@
+{
+	"info": {
+		"_postman_id": "79ede0ac-83e2-454b-aee8-73d894db6efe",
+		"name": "api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "routes",
+			"item": [
+				{
+					"name": "Carros",
+					"item": [
+						{
+							"name": "get-all",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "x-access-token",
+										"type": "text",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMGYzYTE0OGVkYTAzNDRmOWM4OTZhMyIsImVtYWlsIjoiZ2FncmdlQGdtYWlsLmNvbSIsIm5hbWUiOiJiYmJjYWNiIiwiaWF0IjoxNTk0ODM1Nzg5LCJleHAiOjE1OTQ5MjIxODl9.tO2_W_mjxSRWGZHLp4Hi3mcv2dvkuuzc3Jxq4NJaQ2M"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3501/car",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3501",
+									"path": [
+										"car"
+									],
+									"query": [
+										{
+											"key": "x-access-token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMGYzYTE0OGVkYTAzNDRmOWM4OTZhMyIsImVtYWlsIjoiZ2FncmdlQGdtYWlsLmNvbSIsIm5hbWUiOiJiYmJjYWNiIiwiaWF0IjoxNTk0ODM1Nzg5LCJleHAiOjE1OTQ5MjIxODl9.tO2_W_mjxSRWGZHLp4Hi3mcv2dvkuuzc3Jxq4NJaQ2M",
+											"disabled": true
+										},
+										{
+											"key": "Cont",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get-by-id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "x-access-token",
+										"type": "text",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMGYzYTE0OGVkYTAzNDRmOWM4OTZhMyIsImVtYWlsIjoiZ2FncmdlQGdtYWlsLmNvbSIsIm5hbWUiOiJiYmJjYWNiIiwiaWF0IjoxNTk0ODM1Nzg5LCJleHAiOjE1OTQ5MjIxODl9.tO2_W_mjxSRWGZHLp4Hi3mcv2dvkuuzc3Jxq4NJaQ2M"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3501/car/5f8cefbde420fd4a83ce19a3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3501",
+									"path": [
+										"car",
+										"5f8cefbde420fd4a83ce19a3"
+									],
+									"query": [
+										{
+											"key": "x-access-token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMGYzYTE0OGVkYTAzNDRmOWM4OTZhMyIsImVtYWlsIjoiZ2FncmdlQGdtYWlsLmNvbSIsIm5hbWUiOiJiYmJjYWNiIiwiaWF0IjoxNTk0ODM1Nzg5LCJleHAiOjE1OTQ5MjIxODl9.tO2_W_mjxSRWGZHLp4Hi3mcv2dvkuuzc3Jxq4NJaQ2M",
+											"disabled": true
+										},
+										{
+											"key": "Cont",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insert",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "x-access-token",
+										"type": "text",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMGYzYTE0OGVkYTAzNDRmOWM4OTZhMyIsImVtYWlsIjoiZ2FncmdlQGdtYWlsLmNvbSIsIm5hbWUiOiJiYmJjYWNiIiwiaWF0IjoxNTk0ODM1Nzg5LCJleHAiOjE1OTQ5MjIxODl9.tO2_W_mjxSRWGZHLp4Hi3mcv2dvkuuzc3Jxq4NJaQ2M"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"color\": \"5f0cbe1c4f8daf76d83661b6\",\n\t\"board\": \"BBQ-aaaa\",\n    \"brand\": \"VOLKS\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3501/car",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3501",
+									"path": [
+										"car"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"color\": \"5f0cbe1c4f8daf76d83661b6\",\n\t\"board\": \"AAB-3232\",\n    \"brand\": \"VM\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3501/car/5f8ce080e528f840827eaee6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3501",
+									"path": [
+										"car",
+										"5f8ce080e528f840827eaee6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"title\": \"Abrobinha\",\n\t\"description\": \"bbbccb\",\n\t\"slug\": \"Abrobinha\",\n\t\"active\":true,\n\t\"price\": 14\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3501/car/5f8ce080e528f840827eaee6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3501",
+									"path": [
+										"car",
+										"5f8ce080e528f840827eaee6"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Motorista",
+					"item": [
+						{
+							"name": "get-all",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "x-access-token",
+										"type": "text",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMGYzYTE0OGVkYTAzNDRmOWM4OTZhMyIsImVtYWlsIjoiZ2FncmdlQGdtYWlsLmNvbSIsIm5hbWUiOiJiYmJjYWNiIiwiaWF0IjoxNTk0ODM1Nzg5LCJleHAiOjE1OTQ5MjIxODl9.tO2_W_mjxSRWGZHLp4Hi3mcv2dvkuuzc3Jxq4NJaQ2M"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3501/driver",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3501",
+									"path": [
+										"driver"
+									],
+									"query": [
+										{
+											"key": "x-access-token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMGYzYTE0OGVkYTAzNDRmOWM4OTZhMyIsImVtYWlsIjoiZ2FncmdlQGdtYWlsLmNvbSIsIm5hbWUiOiJiYmJjYWNiIiwiaWF0IjoxNTk0ODM1Nzg5LCJleHAiOjE1OTQ5MjIxODl9.tO2_W_mjxSRWGZHLp4Hi3mcv2dvkuuzc3Jxq4NJaQ2M",
+											"disabled": true
+										},
+										{
+											"key": "Cont",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get-by-id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "x-access-token",
+										"type": "text",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMGYzYTE0OGVkYTAzNDRmOWM4OTZhMyIsImVtYWlsIjoiZ2FncmdlQGdtYWlsLmNvbSIsIm5hbWUiOiJiYmJjYWNiIiwiaWF0IjoxNTk0ODM1Nzg5LCJleHAiOjE1OTQ5MjIxODl9.tO2_W_mjxSRWGZHLp4Hi3mcv2dvkuuzc3Jxq4NJaQ2M"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3501/driver/5f8cfa99cf29fe57f09152e3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3501",
+									"path": [
+										"driver",
+										"5f8cfa99cf29fe57f09152e3"
+									],
+									"query": [
+										{
+											"key": "x-access-token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMGYzYTE0OGVkYTAzNDRmOWM4OTZhMyIsImVtYWlsIjoiZ2FncmdlQGdtYWlsLmNvbSIsIm5hbWUiOiJiYmJjYWNiIiwiaWF0IjoxNTk0ODM1Nzg5LCJleHAiOjE1OTQ5MjIxODl9.tO2_W_mjxSRWGZHLp4Hi3mcv2dvkuuzc3Jxq4NJaQ2M",
+											"disabled": true
+										},
+										{
+											"key": "Cont",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insert",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "x-access-token",
+										"type": "text",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMGYzYTE0OGVkYTAzNDRmOWM4OTZhMyIsImVtYWlsIjoiZ2FncmdlQGdtYWlsLmNvbSIsIm5hbWUiOiJiYmJjYWNiIiwiaWF0IjoxNTk0ODM1Nzg5LCJleHAiOjE1OTQ5MjIxODl9.tO2_W_mjxSRWGZHLp4Hi3mcv2dvkuuzc3Jxq4NJaQ2M"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Batman\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3501/driver",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3501",
+									"path": [
+										"driver"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Goku & Gohan\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3501/driver/5f8cfa99cf29fe57f09152e3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3501",
+									"path": [
+										"driver",
+										"5f8cfa99cf29fe57f09152e3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"title\": \"Abrobinha\",\n\t\"description\": \"bbbccb\",\n\t\"slug\": \"Abrobinha\",\n\t\"active\":true,\n\t\"price\": 14\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3501/driver/5f8ce080e528f840827eaee6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3501",
+									"path": [
+										"driver",
+										"5f8ce080e528f840827eaee6"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "UtilizaçãoAutomovel",
+					"item": [
+						{
+							"name": "get-all",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "x-access-token",
+										"type": "text",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMGYzYTE0OGVkYTAzNDRmOWM4OTZhMyIsImVtYWlsIjoiZ2FncmdlQGdtYWlsLmNvbSIsIm5hbWUiOiJiYmJjYWNiIiwiaWF0IjoxNTk0ODM1Nzg5LCJleHAiOjE1OTQ5MjIxODl9.tO2_W_mjxSRWGZHLp4Hi3mcv2dvkuuzc3Jxq4NJaQ2M"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3501/driver-car",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3501",
+									"path": [
+										"driver-car"
+									],
+									"query": [
+										{
+											"key": "x-access-token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMGYzYTE0OGVkYTAzNDRmOWM4OTZhMyIsImVtYWlsIjoiZ2FncmdlQGdtYWlsLmNvbSIsIm5hbWUiOiJiYmJjYWNiIiwiaWF0IjoxNTk0ODM1Nzg5LCJleHAiOjE1OTQ5MjIxODl9.tO2_W_mjxSRWGZHLp4Hi3mcv2dvkuuzc3Jxq4NJaQ2M",
+											"disabled": true
+										},
+										{
+											"key": "Cont",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "insert",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "x-access-token",
+										"type": "text",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmMGYzYTE0OGVkYTAzNDRmOWM4OTZhMyIsImVtYWlsIjoiZ2FncmdlQGdtYWlsLmNvbSIsIm5hbWUiOiJiYmJjYWNiIiwiaWF0IjoxNTk0ODM1Nzg5LCJleHAiOjE1OTQ5MjIxODl9.tO2_W_mjxSRWGZHLp4Hi3mcv2dvkuuzc3Jxq4NJaQ2M"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"init_date\": \"2020-10-19\",\n    \"end_date\": \"2020-10-22\",\n    \"driver_id\": \"5f8cfa99cf29fe57f09152e3\",\n    \"car_id\": \"5f8cefbde420fd4a83ce19a3\",\n    \"description\": \"O Motivo é trabalho, trabalho e trabalho\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3501/driver-car",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3501",
+									"path": [
+										"driver-car"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update-finish-car-driver",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3501/driver-car/5f8d0419f9bca5611f97c45c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3501",
+									"path": [
+										"driver-car",
+										"5f8d0419f9bca5611f97c45c"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
